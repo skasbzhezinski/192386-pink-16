@@ -22,43 +22,99 @@
         <li class="site-list__item site-list__item--active"><a>Главная</a></li>
         <li class="site-list__item"><a href="photo.html">Фотографии</a></li>
         <li class="site-list__item"><a href="form.html">Конкурс</a></li>
-        <li class="site-list__item"><a href="#">HTML Academy</a></li>
+        <li class="site-list__item"><a href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a></li>
       </ul>
     </nav>
-
   </header>
 
   <main class="page-main">
     <h1 class="visually-hidden">Pink - мобильное приложение для раскрашивания серых будней в розовый цвет</h1>
+
     <!--Блок загрузок приложений-->
     <section class="download">
       <img class="download__img" src="http://placehold.it/320x314" width="320" height="314" alt="рука с айфоном">
-      <a class="download__link" href="#"></a>
+      <a class="download__common-link" href="https://www.apple.com/ru/itunes/"></a>
       <ul class="download__list">
-        <li class="download__list-item download__list-item--apple"><a href="#"></a></li>
-        <li class="download__list-item download__list-item--android"><a href="#"></a></li>
-        <li class="download__list-item download__list-item--windows"><a href="#"></a></li>
+        <li class="download__item">
+          <a class="download__link download__link--ios" href="https://www.apple.com/ru/ios/app-store/">
+          </a>
+        </li>
+        <li class="download__item">
+          <a class="download__link download__link--android" href="https://play.google.com/store/apps">
+          </a>
+        </li>
+        <li class="download__item">
+          <a class="download__link download__link--windows"
+            href="https://www.microsoft.com/ru-ru/store/apps/windows?icid=CNavAppsWindowsApps">
+          </a>
+        </li>
       </ul>
+      <p class="download__description">Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8</p>
     </section>
+
     <!--Блок преимуществ-->
     <section class="advantages">
-      <h3 class="advantages__head">Устали от серости мегаполиса?</h3>
-      <h3 class="advantages__head"> Нам есть, что вам предложить!</h3>
-      <div class="advantages__text-block">
-        <b>Поднимает настроение</b>
-        <p>Приложение позволит вам победить осеннюю хандру и депрессию буквально в несколько кликов</p>
+      <h2 class="visually-hidden">Преимущества</h2>
+      <div class="advantages__heads">
+        <p class="advantages__head">Устали от серости мегаполиса?</p>
+        <p class="advantages__head">Нам есть, что вам предложить!</p>
       </div>
-      <div class="advantages__text-block">
-        <b>Меняет мир вокруг</b>
-        <p>Сделайте снимок и украсьте его смайликом или текстовой подписью, чтобы усилить эффект</p>
-      </div>
-      <div class="advantages__text-block">
-        <b>Заводите новых друзей</b>
-        <p>Ставьте лайки, комментируйте, делитесь фотографиями с друзьями и заводите новых</p>
-      </div>
+      <ul class="advantages__text">
+        <li class="advantages__text-block">
+          <h3 class="advantages__title">Поднимает настроение</h3>
+          <p class="advantages__text">Приложение позволит вам победить осеннюю хандру и депрессию буквально в несколько
+            кликов</p>
+        </li>
+        <li class="advantages__text-block">
+          <h3 class="advantages__title">Меняет мир вокруг</h3>
+          <p class="advantages__text">Сделайте снимок и украсьте его смайликом или текстовой подписью, чтобы усилить
+            эффект</p>
+        </li>
+        <li class="advantages__text-block">
+          <h3 class="advantages__title">Заводите новых друзей</h3>
+          <p class="advantages__text">Ставьте лайки, комментируйте, делитесь фотографиями с друзьями и заводите новых
+          </p>
+        </li>
+      </ul>
       <img class="advantages__img" src="http://placehold.it/157x320" width="157" height="320" alt="пример фото">
     </section>
-    <section class="review">
+    <section class="reviews">
+      <h2 class="visually-hidden">Отзывы</h2>
+      <div class="reviews__slider">
+        <p class="reviews__autor"></p>
+        <blockquote class="reviews__opinion"><q>Это приложение перевернуло мой мир и позволило по-новому взглянуть на
+            привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной
+            фотографии!</q>
+        </blockquote>
+      </div>
+      <div class="slider-control">
+        <button class="slider-control__button" type="button"></button>
+        <button class="slider-control__button" type="button"></button>
+        <button class="slider-control__button" type="button"></button>
+      </div>
+    </section>
+    <section class="price">
+      <h2 class="visually-hidden">Цена</h2>
+      <table class="price-table">
+        <tr>
+          <th class="price-table__head">
+            <span>СТАНДАРТ</span>
+            <span>3,99 USD</span>
+          </th>
+        </tr>
+        <tr>
+          <td class="price-table__data">РОЗОВЫЙ ФИЛЬТР</td>
+          <td></td>
+        </tr>
+        <tr>
+          <td class="price-table__data">СМАЙЛИКИ</td>
+          <td></td>
+        </tr>
+        <tr>
+          <td class="price-table__data">КОММЕНТАРИИ</td>
+          <td></td>
+        </tr>
+      </table>
 
     </section>
   </main>
