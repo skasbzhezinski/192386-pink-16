@@ -1,10 +1,53 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
+
 <head>
   <meta charset="UTF-8">
   <title>Пинк. Форма</title>
 </head>
-<body>
 
+<body>
+  <header class="page-header">
+    <a class="page-header__logo" href="">
+      <img src="http://placehold.it/75x22" width="75" height="22" alt="Pink">
+    </a>
+    <!--Блок навигации-->
+    <nav class="main-nav">
+      <button class="main-nav__toggle" type="button"></button>
+      <ul class="main-nav__list site-list">
+        <li class="site-list__item site-list__item--active"><a>Главная</a></li>
+        <li class="site-list__item"><a href="photo.html">Фотографии</a></li>
+        <li class="site-list__item"><a href="form.html">Конкурс</a></li>
+        <li class="site-list__item"><a href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main class="page-main">
+
+    <!--Блок с заголовком страницы-->
+    <section class="page-title">
+      <h1 class="page-title__head">Конкурс на самое безбашенное путешествие с Пинк</h1>
+    </section>
+    <form class="feedback" action="" method="post">
+      <p class="feedback__offer">Поделитесь своей историей и получите шанс выиграть ценный приз - 1000 миль на вашу
+        бонусную карту!</p>
+      <fieldset class="feedback__your-name">
+        <label class="feedback__label" for="surname">Фамилия:</label>
+        <input class="feedback__input" type="text" id="surname" placeholder="Укажите фамилию *">
+        <label class="feedback__label" for="name">Имя:</label>
+        <input class="feedback__input" type="text" id="name" placeholder="Введите ваше имя *">
+        <label class="feedback__label" for="patronymic">Отчество:</label>
+        <input class="feedback__input" type="text" id="patronymic" placeholder="Ну и отчество тоже">
+      </fieldset>
+      <fieldset class="feedback__your-achievements"></fieldset>
+      <fieldset class="feedback__your-contacts"></fieldset>
+      <fieldset class="feedback__your-app"></fieldset>
+      <fieldset class="feedback__your-emotions"></fieldset>
+      <button type="submit">Отправить форму</button>
+
+    </form>
+  </main>
 </body>
+
 </html>

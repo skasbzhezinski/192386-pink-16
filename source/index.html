@@ -15,7 +15,7 @@
     <a class="page-header__logo" href="">
       <img src="http://placehold.it/75x22" width="75" height="22" alt="Pink">
     </a>
-    <!--Блок навигации-->
+    <!--Блок навигации (выпадающее меню)-->
     <nav class="main-nav">
       <button class="main-nav__toggle" type="button"></button>
       <ul class="main-nav__list site-list">
@@ -78,44 +78,79 @@
       </ul>
       <img class="advantages__img" src="http://placehold.it/157x320" width="157" height="320" alt="пример фото">
     </section>
+
+    <!--Блок отзывов (слайдер)-->
     <section class="reviews">
       <h2 class="visually-hidden">Отзывы</h2>
-      <div class="reviews__slider">
-        <p class="reviews__autor"></p>
-        <blockquote class="reviews__opinion"><q>Это приложение перевернуло мой мир и позволило по-новому взглянуть на
-            привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной
-            фотографии!</q>
-        </blockquote>
+      <div class="reviews__wrapper slider">
+        <div class="reviews__slide slider__item">
+          <cite class="reviews__autor">Николай Петров</cite>
+          <blockquote class="reviews__opinion"><q>Это приложение перевернуло мой мир и позволило по-новому взглянуть на
+              привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной
+              фотографии!</q>
+          </blockquote>
+        </div>
       </div>
-      <div class="slider-control">
-        <button class="slider-control__button" type="button"></button>
-        <button class="slider-control__button" type="button"></button>
-        <button class="slider-control__button" type="button"></button>
-      </div>
+      <p class="reviews__toggles slider__toggles">
+        <button class="slider__toggle" type="button"></button>
+        <button class="slider__toggle" type="button"></button>
+        <button class="slider__toggle" type="button"></button>
+      </p>
     </section>
-    <section class="price">
-      <h2 class="visually-hidden">Цена</h2>
-      <table class="price-table">
-        <tr>
-          <th class="price-table__head">
-            <span>СТАНДАРТ</span>
-            <span>3,99 USD</span>
-          </th>
-        </tr>
-        <tr>
-          <td class="price-table__data">РОЗОВЫЙ ФИЛЬТР</td>
-          <td></td>
-        </tr>
-        <tr>
-          <td class="price-table__data">СМАЙЛИКИ</td>
-          <td></td>
-        </tr>
-        <tr>
-          <td class="price-table__data">КОММЕНТАРИИ</td>
-          <td></td>
-        </tr>
-      </table>
 
+    <!--Блок "цена" (слайдер)-->
+    <section class="price">
+      <div class="price__wrapper slider">
+        <h2 class="visually-hidden">Цена</h2>
+        <table class="price-table slider__item">
+          <tr>
+            <th class="price-table__head">
+              <span>СТАНДАРТ</span>
+              <span>3,99 USD</span>
+            </th>
+          </tr>
+          <tr>
+            <td class="price-table__data">РОЗОВЫЙ ФИЛЬТР</td>
+            <td class="price-table__value"></td>
+          </tr>
+          <tr>
+            <td class="price-table__data">СМАЙЛИКИ</td>
+            <td class="price-table__value"></td>
+          </tr>
+          <tr>
+            <td class="price-table__data">КОММЕНТАРИИ</td>
+            <td class="price-table__value"></td>
+          </tr>
+        </table>
+      </div>
+      <p class="price__toggles slider__toggles">
+        <button class="slider__toggle" type="button"></button>
+        <button class="slider__toggle" type="button"></button>
+        <button class="slider__toggle" type="button"></button>
+      </p>
+    </section>
+
+    <!--Блок "контакты"-->
+    <section class="contacts">
+      <h2 class="visually-hidden">Наши контакты</h2>
+      <p class="contacts__head">Остались вопросы? Свяжитесь с нами!</p>
+      <ul class="contacts__data">
+        <li class="contacts__item">
+          <h3 class="contacts__item-head">Звоните:</h3>
+          <p class="contacts__item-text">+7 (812) 555-66-66</p>
+        </li>
+        <li class="contacts__item">
+          <h3 class="contacts__item-head">Пишите:</h3>
+          <p class="contacts__item-text">mail@htmlacademy.ru</p>
+        </li>
+        <li class="contacts__item">
+          <h3 class="contacts__item-head">Приезжайте в гости:</h3>
+          <address class="contacts__item-text">ул. Большая Конюшенная, 19/8</address>
+        </li>
+      </ul>
+
+      <!--Блок с картой-->
+      <div class="map"></div>
     </section>
   </main>
 
