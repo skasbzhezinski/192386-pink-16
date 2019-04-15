@@ -5,24 +5,28 @@
   <meta charset="UTF-8">
   <title>Пинк. Фотографии</title>
   <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/normalize.css">
 </head>
 
 <body>
 
   <header class="page-header">
-    <div class="header-logo">
-      <a class="header-logo__link" href="index.html">
-        <img class="header-logo__img" src="http://placehold.it/75x22" width="75" height="22" alt="Pink">
-      </a>
-    </div>
-    <!--Блок навигации-->
+    <!--Блок навигации (выпадающее меню)-->
     <nav class="main-nav">
-      <button class="main-nav__toggle" type="button"></button>
+      <div class="main-nav__wrapper">
+        <div class="header-logo">
+          <a class="header-logo__link" href="#">
+            <img class="header-logo__img" src="http://placehold.it/75x22" width="75" height="22" alt="Pink">
+          </a>
+        </div>
+        <button class="main-nav__toggle" type="button">X</button>
+      </div>
       <ul class="main-nav__list site-list">
         <li class="site-list__item site-list__item--active"><a href="index.html">Главная</a></li>
         <li class="site-list__item"><a>Фотографии</a></li>
         <li class="site-list__item"><a href="form.html">Конкурс</a></li>
-        <li class="site-list__item"><a href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a></li>
+        <li class="site-list__item"><a href="https://htmlacademy.ru/intensive/adaptive" target="_blank">HTML Academy</a>
+        </li>
       </ul>
     </nav>
   </header>

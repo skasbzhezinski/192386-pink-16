@@ -5,19 +5,22 @@
   <meta charset="UTF-8">
   <title>Пинк. Форма</title>
   <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/normalize.css">
 </head>
 
 <body>
 
   <header class="page-header">
-    <div class="header-logo">
-      <a class="header-logo__link" href="index.html">
-        <img class="header-logo__img" src="http://placehold.it/75x22" width="75" height="22" alt="Pink">
-      </a>
-    </div>
-    <!--Блок навигации-->
+    <!--Блок навигации (выпадающее меню)-->
     <nav class="main-nav">
-      <button class="main-nav__toggle" type="button"></button>
+      <div class="main-nav__wrapper">
+        <div class="header-logo">
+          <a class="header-logo__link" href="#">
+            <img class="header-logo__img" src="http://placehold.it/75x22" width="75" height="22" alt="Pink">
+          </a>
+        </div>
+        <button class="main-nav__toggle" type="button">X</button>
+      </div>
       <ul class="main-nav__list site-list">
         <li class="site-list__item site-list__item--active"><a href="index.html">Главная</a></li>
         <li class="site-list__item"><a href="photo.html">Фотографии</a></li>
