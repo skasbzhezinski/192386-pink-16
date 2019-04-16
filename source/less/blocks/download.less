@@ -5,17 +5,47 @@
   background-color: @blue;
 }
 
+/* временно */
 .download__img {
+  position: absolute;
+  bottom: -32px;
+  left: -32px;
+  display: block;
   background-color: @blue;
+  transform: scale(0.8);
+}
+
+.download__list-wrapper {
+  padding-top: 38px;
 }
 
 .download__common-link {
   text-decoration: none;
   color: white;
-  text-align: center;
+  .bold-font();
+  font-size: 18px;
+  line-height: 18px;
 }
 
 .download__link {
   width: 45px;
-  height: 56px;;
+  height: 56px;
+}
+
+.download__description {
+  text-align: center;
+  padding-bottom: 38px;
+  .light-font();
+  font-size: 14px;
+  line-height: 24px;
+  color: white;
+}
+
+.download__img-wrapper {
+  position: relative;
+  width: 320px;
+  min-height: 462px;
+  background-color: @blue;
+  background-image: url("../../img/bg-back-mobile@1x.jpg");
+  background-size: contain;
 }
