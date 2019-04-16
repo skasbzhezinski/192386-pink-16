@@ -38,24 +38,29 @@
     <!--Блок загрузок приложений-->
     <section class="download">
       <h2 class="visually-hidden">Загрузить приложение</h2>
-      <img class="download__img" src="http://placehold.it/320x398" width="320" height="398" alt="рука с айфоном">
-      <a class="download__common-link" href="https://www.apple.com/ru/itunes/" target="_blank">Скачать приложение</a>
-      <ul class="download__list">
-        <li class="download__item">
-          <a class="download__link download__link--ios" href="https://www.apple.com/ru/ios/app-store/" target="_blank">
-          </a>
-        </li>
-        <li class="download__item">
-          <a class="download__link download__link--android" href="https://play.google.com/store/apps" target="_blank">
-          </a>
-        </li>
-        <li class="download__item">
-          <a class="download__link download__link--windows"
-            href="https://www.microsoft.com/ru-ru/store/apps/windows?icid=CNavAppsWindowsApps" target="_blank">
-          </a>
-        </li>
-      </ul>
-      <p class="download__description">Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8</p>
+      <div class="download__img-wrapper">
+        <img class="download__img" src="img/iphone-hand-mobile@1x.png" width="320" alt="рука с айфоном">
+      </div>
+      <div class="download__list-wrapper">
+        <a class="download__common-link" href="https://www.apple.com/ru/itunes/" target="_blank">Скачать приложение</a>
+        <ul class="download__list">
+          <li class="download__item">
+            <a class="download__link download__link--ios" href="https://www.apple.com/ru/ios/app-store/"
+              target="_blank">
+            </a>
+          </li>
+          <li class="download__item">
+            <a class="download__link download__link--android" href="https://play.google.com/store/apps" target="_blank">
+            </a>
+          </li>
+          <li class="download__item">
+            <a class="download__link download__link--windows"
+              href="https://www.microsoft.com/ru-ru/store/apps/windows?icid=CNavAppsWindowsApps" target="_blank">
+            </a>
+          </li>
+        </ul>
+        <p class="download__description">Доступно для iPhone, iPad, Android,<br> Windows Phone, OS X, Windows 8</p>
+      </div>
     </section>
 
     <!--Блок преимуществ-->
@@ -65,24 +70,27 @@
         <p class="advantages__head">Устали от серости мегаполиса?</p>
         <p class="advantages__head">Нам есть, что вам предложить!</p>
       </div>
-      <ul class="advantages__list">
-        <li class="advantages__list-item">
-          <h3 class="advantages__title">Поднимает настроение</h3>
-          <p class="advantages__text">Приложение позволит вам победить осеннюю хандру и депрессию буквально в несколько
-            кликов</p>
-        </li>
-        <li class="advantages__list-item">
-          <h3 class="advantages__title">Меняет мир вокруг</h3>
-          <p class="advantages__text">Сделайте снимок и украсьте его смайликом или текстовой подписью, чтобы усилить
-            эффект</p>
-        </li>
-        <li class="advantages__list-item">
-          <h3 class="advantages__title">Заводите новых друзей</h3>
-          <p class="advantages__text">Ставьте лайки, комментируйте, делитесь фотографиями с друзьями и заводите новых
-          </p>
-        </li>
-      </ul>
-      <img class="advantages__img" src="http://placehold.it/157x320" width="157" height="320" alt="пример фото">
+      <div class="advantages__list-wrapper">
+        <ul class="advantages__list">
+          <li class="advantages__list-item">
+            <h3 class="advantages__title">Поднимает настроение</h3>
+            <p class="advantages__text">Приложение позволит вам победить осеннюю хандру и депрессию буквально в
+              несколько
+              кликов</p>
+          </li>
+          <li class="advantages__list-item">
+            <h3 class="advantages__title">Меняет мир вокруг</h3>
+            <p class="advantages__text">Сделайте снимок и украсьте его смайликом или текстовой подписью, чтобы усилить
+              эффект</p>
+          </li>
+          <li class="advantages__list-item">
+            <h3 class="advantages__title">Заводите новых друзей</h3>
+            <p class="advantages__text">Ставьте лайки, комментируйте, делитесь фотографиями с друзьями и заводите новых
+            </p>
+          </li>
+        </ul>
+        <img class="advantages__img" src="img/iphone-screen-mobile@1x.png" width="157" height="320" alt="пример фото">
+      </div>
     </section>
 
     <!--Блок отзывов (слайдер)-->
@@ -91,9 +99,10 @@
       <div class="reviews__wrapper slider">
         <div class="reviews__slide slider__item">
           <cite class="reviews__autor">Николай Петров</cite>
-          <blockquote class="reviews__opinion"><q>Это приложение перевернуло мой мир и позволило по-новому взглянуть на
+          <blockquote class="reviews__opinion">
+            <p>Это приложение перевернуло мой мир и позволило по-новому взглянуть на
               привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной
-              фотографии!</q>
+              фотографии!</p>
           </blockquote>
         </div>
       </div>
@@ -117,15 +126,15 @@
           </tr>
           <tr>
             <td class="price-table__data">РОЗОВЫЙ ФИЛЬТР</td>
-            <td class="price-table__value">1</td>
+            <td class="price-table__value">V</td>
           </tr>
           <tr>
             <td class="price-table__data">СМАЙЛИКИ</td>
-            <td class="price-table__value">2</td>
+            <td class="price-table__value">V</td>
           </tr>
           <tr>
             <td class="price-table__data">КОММЕНТАРИИ</td>
-            <td class="price-table__value">3</td>
+            <td class="price-table__value">X</td>
           </tr>
         </table>
       </div>
