@@ -1,11 +1,62 @@
 /* Блок с ценой */
 .price {
-  width: 320px;
+  width: auto;
   .alignment();
   background-color: @lightgray;
+  //overflow: hidden;
+}
+
+.price-table {
+  width: 1120px;
+  border-collapse: collapse;
+}
+
+//.price-table,
+.price-table th,
+.price-table td {
+  border: 1px solid #e5e5e5;
 }
 
 .price__wrapper {
   margin-top: 90px;
+}
+
+.price-table__item {
+  .bold-font();
+  font-size: 18px;
+  line-height: 30px;
+  padding-top: 16px;
+  padding-left: 10px;
+}
+
+.price-table__price {
+  .light-font();
+  font-size: 24px;
+  line-height: 30px;
+}
+
+.price-table__head {
+  width: 278px;
+  padding-top: 21px;
+  padding-bottom: 23px;
+  text-align: center;
+  vertical-align: middle;
+}
+
+.price-table__data {
+  width: 278px;
+  text-align: left;
+  padding-top: 25px;
+  padding-bottom: 25px;
+  padding-left: 22px;
+}
+
+.price-table tr:not(:first-child),
+.price-table__head:first-child {
   background-color: white;
+}
+
+.price-table__head:first-child {
+  border-left: none;
+  border-top: none;
 }
