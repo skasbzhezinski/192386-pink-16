@@ -1,27 +1,46 @@
 /* Блок контакты */
 .contacts {
   width: 320px;
-  .alignment();
+  margin: 0 auto;
+  //background-color: aquamarine;
 }
 
 .contacts__head {
-  .light-font();
+  margin-bottom: 34px;
+  font-weight: 300;
   font-size: 24px;
-  line-height: 26px;
+  line-height: 30px;
   text-align: center;
 }
 
 .contacts__data {
+  width: auto;
   padding: 0;
   margin: 0;
+  list-style: none;
 }
 
 .contacts__item {
-  list-style: none;
+  //background-color: bisque;
 }
 
-.contacts__item-head,
-.contacts__item-text {
+.contacts__item-head {
+  padding: 0;
+  margin: 0;
+  margin-top: 25px;
   text-align: center;
-  list-style: none;
+}
+
+.contacts__item-text {
+  padding: 0;
+  margin: 0;
+  font-size: 24px;
+  line-height: 30px;
+  font-weight: 300;
+  color: @darkpink;
+  text-align: center;
+}
+
+.contacts__item-text:last-child {
+  font-style: normal;
 }
