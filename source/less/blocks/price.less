@@ -1,10 +1,17 @@
 /* Блок с ценой */
 .price {
-  //overflow: hidden;
+  width: 320px;
+  margin: 0 auto;
+}
+
+.slider {
+  overflow: hidden;
 }
 
 .price-table {
   border-collapse: collapse;
+  width: 300%;
+  transform: translate(-265px);
 }
 
 //.price-table,
@@ -14,7 +21,7 @@
 }
 
 .price__wrapper {
-  width: 840px;
+  position: relative;
   margin: 0 auto;
   background-color: @lightgray;
   margin-top: 90px;
@@ -34,7 +41,7 @@
 
 .price-table__head,
 .price-table__data {
-  width: 280px;
+  min-width: 280px;
   text-align: center;
   vertical-align: middle;
 }
