@@ -1,0 +1,71 @@
+// Блок с фотогалереей
+.photos {
+  width: 320px;
+  margin: 0 auto;
+}
+
+.photos__list {
+  margin: 0;
+  padding: 0;
+}
+
+.photos__block {
+  margin-bottom: 20px;
+  list-style: none;
+  //background-color: antiquewhite;//вспомогательный временный фон
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
+
+.photos__link {
+  width: 280px;
+  margin: 0 20px;
+  background-color: orangered;//вспомогательный временный фон
+  &--full {
+    margin-left: 0;
+  }
+}
+
+.photos__caption {
+  width: 280px;
+  padding-top: 15px;
+  padding-bottom: 20px;
+  margin-left: 20px;
+  text-align: left;
+  background-color: @lightgray;
+}
+
+.photos__author {
+  padding-left: 20px;
+  font-weight: 700;
+  line-height: 24px;
+}
+
+.photos__ago {
+  font-size: 12px;
+  font-weight: 300;
+  text-transform: uppercase;
+  line-height: 24px;
+}
+
+.photos__text {
+  margin: 0;
+  margin-bottom: 20px;
+  padding: 0 20px;
+  line-height: 24px;
+}
+
+.photos__likes-number {
+  margin-left: 10px;
+  font-size: 12px;
+  line-height: 24px;
+  text-transform: uppercase;
+  color: @darkpink;
+}
+
+.photos__like-heart {
+  margin-left: 15px;
+  border: none;
+  background: none;
+}
