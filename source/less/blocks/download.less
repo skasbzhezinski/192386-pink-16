@@ -1,8 +1,21 @@
 /*Блок загрузок */
 .download {
-  width: 320px;
-  margin: 0 auto;
+  //width: 320px;
+  //margin: 0 auto;
   background-color: @blue;
+}
+
+.download__head {
+  display: none;
+  width: 200px;
+  margin-top: 6px;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  font-weight: 300;
+  font-size: 40px;
+  line-height: 50px;
+  color: white;
 }
 
 .download__img {
@@ -50,4 +63,20 @@
   background-image: url("../../img/bg-back-mobile@1x.jpg");
   background-size: contain;
   overflow: hidden;
+}
+
+@media (min-width: @tablet-width) {
+  .download {
+    display: flex;
+    width: 660px;
+    margin: 0 auto;
+  }
+
+  .download__head {
+    display: block;
+  }
+
+  .download__img-wrapper {
+    order: 2;
+  }
 }
