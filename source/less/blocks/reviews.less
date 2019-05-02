@@ -21,3 +21,36 @@
   font-size: 14px;
   line-height: 30px;
 }
+
+.reviews__authors-characteristic {
+  display: none;
+  padding: 0;
+  margin: 0;
+}
+
+@media (min-width: @tablet-width) {
+  .reviews {
+    width: 620px;
+    min-height: 250px;//временно
+  }
+
+  .reviews__opinion {
+    width: 620px;
+    font-size: 18px;
+    line-height: 30px;
+  }
+
+  .reviews__authors-characteristic {
+    display: block;
+    order: 1;
+  }
+
+  .reviews__slide {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .reviews__author {
+    order: 1;
+  }
+}

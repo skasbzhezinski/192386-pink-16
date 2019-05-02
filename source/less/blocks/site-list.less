@@ -1,3 +1,11 @@
+.site-list {
+  display: flex;
+  flex-direction: column;
+  width: 320px;
+  margin: 0 auto;
+  padding: 0;
+}
+
 .site-list__item {
   padding-top: 15px;
   padding-bottom: 15px;
@@ -16,10 +24,9 @@
   color: white;
 }
 
-@media (min-width: @desktop-width) {
+@media (min-width: @tablet-width) {
   .site-list {
-    display: flex;
-    width: 100%;
+    width: 660px;
     //margin-left: auto;
   }
 }

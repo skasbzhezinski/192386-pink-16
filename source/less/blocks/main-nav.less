@@ -2,6 +2,8 @@
 
 .main-nav__wrapper {
   display: flex;
+  width: 320px;
+  margin: 0 auto;
   background-color: @blue;
   .nav-elements-border();
 }
@@ -29,16 +31,13 @@
 
 @media (min-width: @tablet-width) {
   .main-nav__wrapper {
+    width: 660px;
     padding-top: 8px;
     padding-bottom: 8px;
   }
 }
 
 @media (min-width: @desktop-width) {
-  .main-nav {
-    display: flex;
-  }
-
   .main-nav__toggle {
     display: none;
   }
