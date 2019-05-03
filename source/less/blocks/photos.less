@@ -2,6 +2,7 @@
 .photos {
   width: 320px;
   margin: 0 auto;
+  background-color: beige;//временно
 }
 
 .photos__list {
@@ -11,6 +12,7 @@
 
 .photos__block {
   margin-bottom: 20px;
+  background-color: burlywood;//временно
   list-style: none;
 
   &:last-child {
@@ -21,7 +23,7 @@
 .photos__link {
   width: 280px;
   margin: 0 20px;
-  //background-color: orangered;//вспомогательный временный фон
+  background-color: orangered;//вспомогательный временный фон
   &--full {
     margin-left: 0;
   }
@@ -68,4 +70,43 @@
   margin-left: 15px;
   border: none;
   background: none;
+}
+
+@media (min-width: @tablet-width) {
+  .photos {
+    //width: 660px;
+    width: 100%;
+  }
+
+  .photos__block {
+    width: 300px;
+    margin: 0 auto;
+  }
+
+  .photos__block--full {
+    width: 100%;
+  }
+
+  .photos__list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 660px;
+    margin: 0 auto;
+  }
+
+  .photos__block--full .photos__caption {
+    width: 620px;
+    margin-left: 20px;
+  }
+
+  .photos__caption {
+    width: 300px;
+    margin-left: 0;
+  }
+
+  .photos__link {
+    width: 300px;
+    margin: 0;
+  }
 }
