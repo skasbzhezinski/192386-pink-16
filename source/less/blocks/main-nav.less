@@ -2,6 +2,7 @@
 
 .main-nav__wrapper {
   display: flex;
+  flex-direction: column;
   width: 320px;
   margin: 0 auto;
   background-color: @blue;
@@ -38,6 +39,13 @@
 }
 
 @media (min-width: @desktop-width) {
+  .main-nav__wrapper {
+    display: flex;
+    flex-direction: row;
+    width: 1200px;
+    min-height: 93px;//временно
+  }
+
   .main-nav__toggle {
     display: none;
   }
