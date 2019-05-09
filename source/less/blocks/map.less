@@ -1,15 +1,27 @@
 /* Блок с картой */
 .map {
+  width: 320px;
   height: 200px;
+  margin: 0 auto;
   margin-top: 40px;
   background-color: #eae6dd;
   background-image: url("../../img/bg-map-mobile@1x.png");
+  background-repeat: no-repeat;
   background-position-y: -445px;
 }
 
 @media (min-width: @tablet-width) {
   .map {
+    width: 660px;
     height: 375px;
     background-image: url("../../img/bg-map-tablet@1x.jpg");
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .map {
+    width: 1200px;
+    height: 500px;
+    background-image: url("../../img/bg-map-desktop@1x.jpg");
   }
 }
