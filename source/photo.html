@@ -5,50 +5,49 @@
   <meta charset="UTF-8">
   <title>Пинк. Фотографии</title>
   <link rel="stylesheet" href="css/style.css">
-  <link rel="stylesheet" href="css/normalize.css">
 </head>
 
-<body>
+<body style="overflow-x: hidden;">
 
   <header class="page-header">
     <!--Блок навигации (выпадающее меню)-->
     <nav class="main-nav">
       <div class="main-nav__wrapper">
         <div class="header-logo">
-          <a class="header-logo__link" href="#">
+          <a class="header-logo__link" href="">
             <img class="header-logo__img" src="http://placehold.it/75x22" width="75" height="22" alt="Pink">
           </a>
+          <button class="main-nav__toggle" type="button">X</button>
         </div>
-        <button class="main-nav__toggle" type="button">X</button>
+        <ul class="main-nav__list site-list">
+          <li class="site-list__item site-list__item--active"><a class="site-list__link">Главная</a></li>
+          <li class="site-list__item"><a class="site-list__link" href="photo.html">Фотографии</a></li>
+          <li class="site-list__item"><a class="site-list__link" href="form.html">Конкурс</a></li>
+          <li class="site-list__item"><a class="site-list__link" href="https://htmlacademy.ru/intensive/adaptive"
+              target="_blank">HTML Academy</a>
+          </li>
+        </ul>
       </div>
-      <ul class="main-nav__list site-list">
-        <li class="site-list__item site-list__item--active"><a class="site-list__link" href="index.html">Главная</a>
-        </li>
-        <li class="site-list__item"><a class="site-list__link">Фотографии</a></li>
-        <li class="site-list__item"><a class="site-list__link" href="form.html">Конкурс</a></li>
-        <li class="site-list__item"><a class="site-list__link" href="https://htmlacademy.ru/intensive/adaptive"
-            target="_blank">HTML Academy</a>
-        </li>
-      </ul>
     </nav>
-  </header>
-
-  <main class="page-inner">
 
     <!--Блок с заголовком страницы-->
     <section class="page-title">
       <div class="page-title__wrapper">
         <h1 class="page-title__head">Фотографии пользователей</h1>
       </div>
-      <p class="motive">Взгляните на фотографии, которые<br>выкладывают пользователи!<br>Видите, как не хватает ваших?
-      </p>
     </section>
+    </nav>
+  </header>
+
+  <main class="page-inner">
 
     <!--Блок с фотогалереей-->
     <section class="photos">
       <h2 class="visually-hidden">фотогалерея</h2>
+      <p class="motive">Взгляните на фотографии, которые выкладывают пользователи! Видите, как не хватает ваших?
+      </p>
       <ul class="photos__list">
-        <li class="photos__block">
+        <li class="photos__block photos__block--full">
           <a class="photos__link photos__link--full" href="#">
             <img src="img/panorama-mobile@1x.jpg" width="320" height="137" alt="фотография пользователя">
           </a>
@@ -57,12 +56,12 @@
             <span class="photos__ago">(5 минут назад)</span>
             <p class="photos__text">Прыгать или нет? Напишите в комментарии свой совет и смотрите прямую трансляцию в
               перископе, задавайте свои вопросы!</p>
-          </div>
-          <div class="photos__like">
-            <button class="photos__like-heart" type="button">
-              <img class="photos__icon" src="http://placehold.it/13x12" alt="иконка сердце">
-            </button>
-            <span class="photos__likes-number">нравится: 215</span>
+            <div class="photos__like">
+              <button class="photos__like-heart" type="button">
+                <img class="photos__icon" src="http://placehold.it/13x12" alt="иконка сердце">
+              </button>
+              <span class="photos__likes-number">нравится: 215</span>
+            </div>
           </div>
         </li>
         <li class="photos__block">
@@ -73,7 +72,11 @@
             <div class="photos__comment">
               <b class="photos__author">Левон</b>
               <span class="photos__ago">(5 часов назад)</span>
-              <p class="photos__text">Вчера он на луну летал, сегодня в руки к нам попал.</p>
+              <p class="photos__text">Вчера он на луну летал, сегодня в руки к нам попал.Прыгать или нет? Напишите в
+                комментарии свой совет и смотрите прямую трансляцию в
+                перископе, задавайте свои вопросы!Прыгать или нет? Напишите в комментарии свой совет и смотрите прямую
+                трансляцию в
+                перископе, задавайте свои вопросы!</p>
             </div>
             <div class="photos__like">
               <button class="photos__like-heart" type="button">
@@ -183,21 +186,23 @@
       <p class="motive">Затмите их всех!<br>Выкладывайте все, что накопилось в телефоне!</p>
       <div class="upload__wrapper">
         <img class="upload__photo" src="img/photo-road-mobile@1x.jpg" width="280" height="374" alt="ваша фотография">
-        <div class="upload__edit-buttons">
-          <button class="upload__edit-button" type="button">
-          </button>
-          <button class="upload__edit-button" type="button">
-          </button>
-          <button class="upload__edit-button" type="button">
-          </button>
-        </div>
-        <div class="upload__edit-scale"></div>
-        <!--шкала-->
-        <div class="upload__fader upload__fader--passive"></div>
-        <!--фейдер-->
-        <div class="upload__buttons">
-          <button class="upload__button upload__button--submit" type="submit">Запостить</button>
-          <button class="upload__button upload__button--reset" type="reset">Отмена</button>
+        <div class="upload__edit-wrapper">
+          <div class="upload__edit-buttons">
+            <button class="upload__edit-button" type="button">
+            </button>
+            <button class="upload__edit-button" type="button">
+            </button>
+            <button class="upload__edit-button" type="button">
+            </button>
+          </div>
+          <div class="upload__edit-scale">________</div>
+          <!--шкала-->
+          <div class="upload__fader upload__fader--passive">||</div>
+          <!--фейдер-->
+          <div class="upload__buttons">
+            <button class="upload__button upload__button--submit" type="submit">Запостить</button>
+            <button class="upload__button upload__button--reset" type="reset">Отмена</button>
+          </div>
         </div>
       </div>
     </section>
@@ -245,7 +250,6 @@
     <div class="page-footer__copyright copyright">
       <b class="copyright__text">Разработано</b>
       <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive" target="_blank">
-        <!--<img src="http://placehold.it/27x34" alt="логотип htmlacademy">-->
         <svg version="1.0" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
           x="0px" y="0px" width="26.943px" height="34.09px" viewBox="0 0 26.943 34.09"
           enable-background="new 0 0 26.943 34.09" xml:space="preserve">

@@ -8,6 +8,10 @@
   margin-bottom: 40px;
 }
 
+.page-footer--hidden {
+  display: none;
+}
+
 .page-footer__logo-wrapper {
   width: 147px;
   height: 51px;
@@ -16,4 +20,19 @@
 
 .page-footer__copyright {
   margin-top: 40px;
+}
+
+@media (min-width: @tablet-width) {
+  .page-footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 620px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .page-footer {
+    width: 940px;
+  }
 }

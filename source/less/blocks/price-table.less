@@ -1,10 +1,11 @@
 // блок с таблицей
 .price-table {
-  width: 100%;
+  //width: 100%;
+  width: 320px;
   margin-top: 40px;
   background-color: white;
   border-collapse: collapse;
-  transform: translate(-260px);
+  transform: translate(-540px);
 }
 
 .price-table__head {
@@ -22,13 +23,6 @@
 .price-table th,
 .price-table td {
   border: 2px solid #e5e5e5;
-}
-
-.price__wrapper {
-  position: relative;
-  margin: 0 auto;
-  background-color: @lightgray;
-  overflow: hidden;
 }
 
 .price-table__item {
@@ -65,18 +59,51 @@
   text-align: right;
 }
 
-/*.price-table tr:not(:first-child),
-.price-table__head:first-child {
-  background-color: white;
-}*/
-
-/*.price-table__head:first-child {
-  border-left: none;
-  border-top: none;
-}*/
-
 .price-table__data-text {
   //display: none;
   padding-left: 10px;
   text-align: left;
+}
+
+@media (min-width: @tablet-width) {
+  .price-table__head,
+  .price-table__data {
+    min-width: 150px;
+  }
+
+  .price-table {
+    width: 620px;
+    margin: 0 auto;
+    transform: none;
+  }
+
+  /*.price-table tr:not(:first-child),
+  .price-table__head:first-child {
+    background-color: @lightgray;
+  }*/
+
+  .price-table__head:first-child {
+    border-left: none;
+    background-color: @lightgray;
+    border-top: 2px solid @lightgray;
+  }
+
+  .price-table__data:not(:first-child) .price-table__data-text {
+    display: none;
+  }
+
+  .price-table__data-content {
+    justify-content: center;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .price-table {
+    width: 940px;
+  }
+
+  .price-table__head,
+  .price-table__data {
+    min-width: 230px;
+  }
 }

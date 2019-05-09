@@ -2,7 +2,7 @@
 .contacts {
   width: 320px;
   margin: 0 auto;
-  //background-color: aquamarine;
+  //background-color: aquamarine;//временно
 }
 
 .contacts__head {
@@ -21,7 +21,7 @@
 }
 
 .contacts__item {
-  //background-color: bisque;
+  //background-color: bisque;//временно
 }
 
 .contacts__item-head {
@@ -43,4 +43,35 @@
 
 .contacts__item-text:last-child {
   font-style: normal;
+}
+
+@media (min-width: @tablet-width) {
+  .contacts {
+    width: 660px;
+  }
+
+  .contacts__data {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .contacts__item:not(:last-child) {
+    flex-grow: 1;
+    flex-basis: 275px;
+  }
+
+  .contacts__item:first-child {
+    flex-basis: 320px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .contacts {
+    width: 960px;
+  }
+
+  .contacts__item:nth-child(2) {
+    order: 1;
+  }
 }

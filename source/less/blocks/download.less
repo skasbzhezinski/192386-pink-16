@@ -3,6 +3,22 @@
   width: 320px;
   margin: 0 auto;
   background-color: @blue;
+  background-image: url("../../img/bg-back-mobile@1x.jpg");
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.download__head {
+  display: none;
+  width: 200px;
+  margin-top: 6px;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  font-weight: 300;
+  font-size: 40px;
+  line-height: 50px;
+  color: white;
 }
 
 .download__img {
@@ -17,10 +33,14 @@
 .download__list-wrapper {
   //временно
   min-height: 236px;
+  width: 320px;
+  margin: 0 auto;
   padding-top: 38px;
 }
 
 .download__common-link {
+  display: block;
+  margin: 0 auto;
   text-decoration: none;
   color: white;
   font-weight: 700;
@@ -45,9 +65,44 @@
 .download__img-wrapper {
   position: relative;
   width: 320px;
+  height: 314px;
+  margin: 0 auto;
   min-height: 462px;
-  background-color: @blue;
-  background-image: url("../../img/bg-back-mobile@1x.jpg");
-  background-size: contain;
+  background-color: transparent;
+  background-image: url("../../img/iphone-hand-mobile@1x.png");
+  background-repeat: no-repeat;
+  background-position-y: 180px;
   overflow: hidden;
+}
+
+@media (min-width: @tablet-width) {
+  .download {
+    display: flex;
+    width: 660px;
+    min-height: 620px;//временно
+    margin: 0 auto;
+    background-image: url("../../img/bg-back-tablet@1x.jpg");
+    background-repeat: no-repeat;
+    background-position-x: -230px;
+    background-size: cover;
+  }
+
+  .download__head {
+    display: block;
+  }
+
+  .download__img-wrapper {
+    order: 2;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .download {
+    width: 1200px;
+    min-height: 761px;//временно
+    //background-image: url("../../img/bg-back-desktop@1x.jpg");
+    //background-repeat: no-repeat;
+    background-color: transparent;
+    background-image: none;
+  }
 }
