@@ -1,8 +1,13 @@
 /*Блок главной навигации  */
 
+.main-nav {
+  margin-bottom: -65px;
+}
+
 .main-nav__wrapper {
   display: flex;
   flex-direction: column;
+
   width: 320px;
   margin: 0 auto;
   background-color: @blue;
@@ -21,13 +26,57 @@
 }*/
 
 .main-nav__toggle {
-  width: 23px;
-  height: 23px;
+  //align-self: center;
+  position: relative;
+
+  width: 50px;
+  height: 25px;
   margin-left: auto;
   margin-right: 20px;
   margin-top: 21px;
-  margin-bottom: 25px;
-  align-self: center;
+  margin-bottom: 23px;
+
+  //background-color: lightcoral;//временно
+  background-color: transparent;
+  border: none;
+}
+
+.main-nav--closed .main-nav__toggle::before {
+  content: "";
+
+  position: absolute;
+  top: 0;
+  left: 0;
+
+  width: 50px;
+  height: 5px;
+
+  background-color: white;
+  box-shadow: 0 10px 0 0 white, 0 20px 0 0 white;
+}
+
+.main-nav--opened .main-nav__toggle {
+  &::before,
+  &::after {
+    content: "";
+
+    position: absolute;
+    top: 10px;
+    left: 25px;
+
+    width: 28px;
+    height: 5px;
+
+    background-color: white;
+  }
+
+  &::before {
+    transform: rotate(45deg);
+  }
+
+  &::after {
+    transform: rotate(-45deg);
+  }
 }
 
 @media (min-width: @tablet-width) {
@@ -48,8 +97,10 @@
   .main-nav__wrapper {
     display: flex;
     flex-direction: row;
+
     width: 1200px;
     min-height: 93px;//временно
+
     border-bottom: none;
     background-color: transparent;
   }
