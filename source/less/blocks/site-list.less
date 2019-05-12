@@ -24,6 +24,15 @@
   text-transform: uppercase;
   text-decoration: none;
   color: white;
+
+  &[href]:hover {
+    color: @darkpink;
+  }
+
+  &[href]:active,
+  &[href]:focus {
+    color: @palepink;
+  }
 }
 
 @media (min-width: @tablet-width) {
