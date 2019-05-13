@@ -3,8 +3,12 @@
   text-align: center;
   width: 320px;
   margin: 0 auto;
-  padding-top: 40px;
+  padding-top: 42px;
   padding-bottom: 45px;
+}
+
+.reviews__wrapper {
+  margin-bottom: 23px;
 }
 
 .reviews__author {
@@ -17,6 +21,7 @@
 .reviews__opinion {
   width: 280px;
   margin: 0;
+  margin-top: 14px;
   margin-left: 20px;//calc((100% - 280px) / 2);
   font-size: 14px;
   line-height: 30px;
@@ -26,6 +31,15 @@
   display: none;
   padding: 0;
   margin: 0;
+}
+
+.reviews__toggles .slider__toggle {
+  border: 3px solid white;
+}
+
+.reviews__toggles .slider__toggle--active {
+  background-color: white;
+  border: 3px solid #000000;
 }
 
 @media (min-width: @tablet-width) {
@@ -59,10 +73,6 @@
   .reviews {
     width: 1200px;
     //background-color: blanchedalmond;//временно
-  }
-
-  .reviews__opinion {
-    //
   }
 
   .reviews__opinion q {
