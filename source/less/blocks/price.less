@@ -19,8 +19,17 @@
   margin-top: 30px;
 }
 
-.price__toggles .slider__toggle {
+.price__toggles .slider__toggle:not(.slider__toggle--active) {
   border: 3px solid @lightgray;
+
+  &:hover {
+    background-color: #7e868f;
+  }
+
+  &:active,
+  &:focus {
+    background-color: #e9ebec;
+  }
 }
 
 .price__toggles .slider__toggle--active {
