@@ -19,7 +19,31 @@
   cursor: pointer;
 }
 
-// .slider__toggle--active {
-//   border: 3px solid #000000;
-//   background-color: white;
-// }
+
+.slider__item--hit {
+  &::after {
+    content: "ХИТ";
+    position: absolute;
+
+    font-size: 14px;
+    line-height: 30px;
+
+    top: 11px;
+    left: 10px;
+    color: white;
+    transform: rotate(-45deg);
+  }
+
+  &::before {
+
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    width: 74px;
+    height: 73px;
+
+    background-image: url("../../img/bg-hit.svg");
+  }
+}
