@@ -5,6 +5,7 @@
   background-color: @blue;
   background-image: url("../../img/bg-back-mobile@1x.jpg");
   background-repeat: no-repeat;
+  background-position-y: -2px;
   background-size: contain;
 }
 
@@ -35,27 +36,75 @@
   min-height: 236px;
   width: 320px;
   margin: 0 auto;
-  padding-top: 38px;
+  padding-top: 26px;
 }
 
 .download__common-link {
   display: block;
+  width: 205px;
+  padding: 15px 35px;
   margin: 0 auto;
-  text-decoration: none;
+
   color: white;
   font-weight: 700;
   font-size: 18px;
   line-height: 18px;
+  text-decoration: none;
+
+  border: 3px solid white;
+  border-radius: 27px;
+
+  &:hover {
+    color: @darkpink;
+    background-color: white;
+  }
+
+  &:active,
+  &:focus {
+    color: @palepink;
+  }
+}
+
+.download__list {
+  display: flex;
+  justify-content: space-between;
+  width: 210px;
+  padding: 0;
+  margin: 0 auto;
+  margin-top: 33px;
+}
+
+.download__item {
+  list-style: none;
 }
 
 .download__link {
-  width: 45px;
-  height: 56px;
+  display: block;
+  width: 50px;
+  height: 60px;
+
+  background-repeat: no-repeat;
+}
+
+.download__link--ios {
+  background-image: url("../../img/logo-apple.svg");
+  background-position: 2px 0;
+}
+
+.download__link--android {
+  background-image: url("../../img/logo-android.svg");
+  background-position: 4px 8px;
+}
+
+.download__link--windows {
+  background-image: url("../../img/logo-microsoft.svg");
+  background-position: 3px 12px;
 }
 
 .download__description {
   text-align: center;
-  padding-bottom: 38px;
+  margin-top: 19px;
+  padding-bottom: 30px;
   font-weight: 300;
   font-size: 14px;
   line-height: 24px;
@@ -71,7 +120,7 @@
   background-color: transparent;
   background-image: url("../../img/iphone-hand-mobile@1x.png");
   background-repeat: no-repeat;
-  background-position-y: 180px;
+  background-position-y: 174px;
   overflow: hidden;
 }
 
@@ -79,20 +128,38 @@
   .download {
     display: flex;
     width: 660px;
-    min-height: 620px;//временно
+    //min-height: 620px;//временно
     margin: 0 auto;
-    background-image: url("../../img/bg-back-tablet@1x.jpg");
+    background-image: url("../../img/iphone-hand-tablet@1x.png"), url("../../img/bg-back-tablet@1x.jpg");
     background-repeat: no-repeat;
-    background-position-x: -230px;
-    background-size: cover;
+    background-position-x: -24px, -274px;
+    background-position-y: 143px, -43px;
+    background-size: initial;
   }
 
   .download__head {
     display: block;
+
+    margin-top: 129px;
   }
 
   .download__img-wrapper {
     order: 2;
+
+    background-image: none;
+  }
+
+  .download__description {
+    padding-bottom: 95px;
+    margin-top: 29px;
+  }
+
+  .download__list {
+    margin-top: 43px;
+  }
+
+  .download__common-link {
+    padding: 15px 40px;
   }
 }
 

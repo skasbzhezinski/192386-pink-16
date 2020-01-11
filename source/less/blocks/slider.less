@@ -1,5 +1,49 @@
 // slider
 
 .slider__toggles {
+  padding: 0;
+  margin: 0;
+
   text-align: center;
+}
+
+.slider__toggle {
+  //display: none;
+  padding: 3px;
+  margin: 0 4.5px;
+
+  background-color: #bec2c7;
+  border-radius: 50%;
+  border-color: transparent;
+
+  cursor: pointer;
+}
+
+
+.slider__item--hit {
+  &::after {
+    content: "ХИТ";
+    position: absolute;
+
+    font-size: 14px;
+    line-height: 30px;
+
+    top: 11px;
+    left: 10px;
+    color: white;
+    transform: rotate(-45deg);
+  }
+
+  &::before {
+
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    width: 74px;
+    height: 73px;
+
+    background-image: url("../../img/bg-hit.svg");
+  }
 }

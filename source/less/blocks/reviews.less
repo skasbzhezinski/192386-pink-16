@@ -3,8 +3,13 @@
   text-align: center;
   width: 320px;
   margin: 0 auto;
-  padding-top: 40px;
+  padding-top: 42px;
   padding-bottom: 45px;
+  overflow: hidden;
+}
+
+.reviews__wrapper {
+  margin-bottom: 23px;
 }
 
 .reviews__author {
@@ -17,6 +22,7 @@
 .reviews__opinion {
   width: 280px;
   margin: 0;
+  margin-top: 14px;
   margin-left: 20px;//calc((100% - 280px) / 2);
   font-size: 14px;
   line-height: 30px;
@@ -28,9 +34,35 @@
   margin: 0;
 }
 
+.reviews__toggles {
+  z-index: 10;
+}
+
+.reviews__toggles .slider__toggle:not(.slider__toggle--active) {
+  border: 3px solid white;
+
+  &:hover {
+    background-color: #7e868f;
+  }
+
+  &:active,
+  &:focus {
+    background-color: #e9ebec;
+  }
+}
+
+.reviews__toggles .slider__toggle--active {
+  background-color: white;
+  border: 3px solid #000000;
+}
+
+.reviews__skew {
+  margin-left: -400px;
+}
+
 @media (min-width: @tablet-width) {
   .reviews {
-    width: 620px;
+    width: 660px;
     min-height: 250px;//временно
   }
 
@@ -53,16 +85,20 @@
   .reviews__author {
     order: 1;
   }
+
+  .reviews__skew {
+    margin-left: -400px;
+  }
+
+  .reviews__skew polygon {
+    //fill: #7e868f;//временно
+  }
 }
 
 @media (min-width: @desktop-width) {
   .reviews {
     width: 1200px;
     //background-color: blanchedalmond;//временно
-  }
-
-  .reviews__opinion {
-    //
   }
 
   .reviews__opinion q {
